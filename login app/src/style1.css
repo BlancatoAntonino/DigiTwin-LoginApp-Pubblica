@@ -1,0 +1,386 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #071724;
+    color: white;
+    line-height: 1.6;
+    padding-bottom: 150px;
+    margin: 0;
+    padding: 0;
+  }
+  
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 3% 0% 3%; /*sopra sinistra sotto destra*/
+    background-color: #071724;
+    position: fixed;
+  
+    width: 100%;       
+    z-index: 10000;
+    border-bottom: 2px solid #ffd53b84;
+  }
+  .logo {
+    
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  .logo img {
+    height: 50px;
+    width: auto;
+    border-radius: 8px; /* smussa leggermente */
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;    
+    /*margin-left: 65%;*/
+  }
+  nav a {
+    margin-left: 25px;
+    color: white;
+    text-decoration: none;
+    
+    font-size: 0.95rem;
+  }
+  
+  main {
+    display: grid;
+    background-color: #071724;
+    padding: 3% 2% 0% 2%;
+    margin: 0%  2% 0% 2%;
+  }
+  .intro{
+    max-width: 40%;
+    padding: 0% 2% 0% 0%;
+  }
+  .intro h1 {
+    font-size: 2.6rem;
+    margin-bottom: 10px;
+  }
+  
+  .intro p {
+    font-size: 1.1rem;
+    color: #DDE3EA;
+  }
+  
+  .grid {
+    margin-top: 2%;
+    width: 63%;
+    gap: 7px;
+    display:flex;
+    flex-wrap: wrap
+  }
+  
+  .box {
+    /*padding: 3% 4%;30px 20px*/
+    border-radius: 12px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+  }
+  
+  .box:hover {
+    transform: scale(1.04);
+    z-index: 1000;
+  }
+  
+  .subtext {
+    font-size: 0.75rem;
+    font-weight: normal;
+    margin-top: 10px;
+  }
+  
+  /* Color classes */
+  .teal {
+    background-color: #007A87; 
+    }
+  .teal-uno {
+    background-color: #68c4cf; 
+      }
+  .teal-due {
+    background-color: #2bacba; 
+  }
+  .orange { 
+  background-color: #F28C28;
+  }
+  .dark-teal {
+  background-color: #014F5B; 
+}
+  .purple { 
+  background-color: #6B1E6D; 
+  }
+  .yellow { 
+  background-color: #FFD43B; 
+  color: #0A0F2C; }
+  .dark {
+  background-color: #2B2B2B;  
+  }
+
+  .uno{z-index:13;}
+  .due{z-index:13;}
+  .tre{bottom :15%; z-index:24;}
+  .quattro{bottom : 15%; z-index:35;}
+  .cinque{top:15%;right:66.8%; z-index:46;}
+  .sei{bottom:15.5% ;left:33.4% ;z-index:57;}
+  .sette{z-index: 170;left:33.3%;bottom:15.5%;}
+  .otto{z-index:79;right:42.5%;top:15%;}
+  .nove{z-index:90;bottom:86.8%;left:67.5%;}
+  .dieci{z-index:111;right:33.4%;bottom:56.5%;}
+  .undici{z-index:130;left:9.1%;bottom:71.1%;}
+  .dodici{z-index:200;left:75.8%;bottom:72%;}
+  
+  
+  .rettangolo-w{width:66.5%;}
+  .rettangolo-h{height:14.5%;}
+  .quadrato-w{width:32.5%;}
+  .quadrato-h{height:29%;}
+  .quadrato-w-2{width:16.25%;}
+  .quadrato-h-b{height:54%;}
+  .quadrato-w-b{width:24.5%;}
+  .rettangolo-w-s{width:49.3%;}
+  .quadrato-h-s{height: 23.7%;}
+  .quadrato-w-m{width: 24%;}
+  .quadrato-h-m{height: 26.5%;}
+  footer {
+    margin-top: 60px;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #DDE3EA;
+  }
+  .main-box {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    margin: 0px ;
+    padding: 3% 0% 0% 0%;
+    border-radius: 12px;
+  }
+  
+  .left-rectangle {
+    flex: 2;
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    min-height: 200px;
+    background-color: #1a1a2e;
+  }
+  
+  .right-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+
+.square-box {
+  flex: 1;
+  background-color: #3c9097; /* Azzurro Digitwin */
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  min-height: 95px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.br{
+  flex-basis: 30%; 
+  
+}
+.box .default-text,
+.box .hover-text {
+  display: block;
+  text-align: center;
+  transition: opacity 0.3s ease;
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box .hover-text {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.box:hover .default-text {
+  opacity: 0;
+}
+
+.box:hover .hover-text {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1300px) {
+  .box.uno,
+  .box.quattro,
+  .box.cinque,
+  .box.nove,
+  .box.dieci,
+  .box.undici,
+  .box.dodici {
+    display: none;
+  }
+  .main-box{
+    padding: 12% 2% 0% 2%;
+    margin: 0%  2% 0% 2%;
+  }
+  .grid{
+    display:grid;
+  }
+  .box{
+    gap: 0;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+
+  }
+}
+
+/* === FOOTER STILE MIGLIORATO === */
+.footer {
+  margin-top: 80px;
+  background-color: #0b1d2f;
+  padding: 40px 20px 20px 20px;
+  color: #dde3ea;
+  font-size: 0.9rem;
+  border-top: 2px solid #ffd43b4d;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.footer-section {
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.footer-section a {
+  color: #ffd43b;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  color: #aaaaaa;
+  font-size: 0.8rem;
+  margin-top: 20px;
+}
+
+/* === Contact Form Styling === */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.contact-form label {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  background-color: #dde3ea;
+  color: #071724;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid #ffd43b;
+}
+
+.contact-form .checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
+.contact-form .checkbox label {
+  line-height: 1.4;
+}
+
+.contact-form button {
+  padding: 10px;
+  background-color: #ffd43b;
+  color: #071724;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+
+.contact-form button:hover {
+  background-color: #e6be2c;
+}
+/* === ContactUs layout dedicato === */
+.contact-main-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 120px 20px 40px 20px; /* 👈 qui il padding-top risolve il problema */
+}
+
+.contact-left-rectangle {
+  flex: 1;
+  max-width: 600px;
+  background-color: #1a1a2e;
+  padding: 30px;
+  border-radius: 12px;
+  color: #dde3ea;
+}
+
+.contact-right-column {
+  flex: 1;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 10px;
+}

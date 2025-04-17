@@ -1,0 +1,99 @@
+/* === LOGIN FORM CUSTOM STYLE === */
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    min-height: 100vh;
+    background-color: #071724;
+  }
+  
+  .login-container {
+    background-color: #1a1a2e;
+    color: #dde3ea;
+    padding: 40px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .login-container h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .login-container p {
+    font-size: 0.9rem;
+    color: #cccccc;
+  }
+  
+  .login-container label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+  }
+  /*
+  .login-container input[type="text"],
+  .login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    background-color: #dde3ea;
+    color: #071724;
+  }
+  */
+  .login-container input[type="text"],
+  .login-container input[type="password"],
+  .login-container input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    background-color: #dde3ea;
+    color: #071724;
+  }
+  
+  .login-container .checkbox {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .login-container button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color: #ffd43b;
+    color: #071724;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .login-container button:hover {
+    background-color: #e6be2c;
+  }
+  
+  .login-options {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+  }
+  
+  .login-options a {
+    color: #ffd43b;
+    text-decoration: none;
+  }
+  
+  .login-options a:hover {
+    text-decoration: underline;
+  }
+  
