@@ -1,18 +1,22 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #071724;
-    color: white;
-    line-height: 1.6;
-    padding-bottom: 150px;
-    margin: 0;
-    padding: 0;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #071724;
+  color: white;
+  line-height: 1.6;
+  padding-bottom: 150px;
+  margin: 0;
+  padding: 0;
+}
   
 
   header {
@@ -52,12 +56,185 @@
     font-size: 0.95rem;
   }
   
-  main {
-    display: grid;
-    background-color: #071724;
-    padding: 3% 2% 0% 2%;
-    margin: 0%  2% 0% 2%;
+main {
+  background-color: #071724;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding: 140px 6% 120px 6%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.home-section {
+  background: linear-gradient(135deg, rgba(10, 27, 43, 0.95), rgba(15, 48, 70, 0.9));
+  border: 1px solid rgba(104, 196, 207, 0.2);
+  border-radius: 24px;
+  padding: 40px 36px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+.hero-section {
+  position: relative;
+  overflow: hidden;
+  padding: 60px 36px 80px;
+}
+
+.hero-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top right, rgba(255, 212, 59, 0.25), transparent 55%),
+    radial-gradient(circle at bottom left, rgba(40, 150, 170, 0.2), transparent 60%);
+  z-index: 0;
+}
+
+.hero-section > * {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
+.hero-highlight {
+  display: block;
+  font-size: clamp(1.5rem, 3.2vw, 2.4rem);
+  color: #68c4cf;
+  margin-top: 10px;
+}
+
+.hero-subtitle {
+  font-size: clamp(1.1rem, 2.2vw, 1.4rem);
+  color: #ffd43b;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: clamp(1.9rem, 3vw, 2.4rem);
+  margin-bottom: 18px;
+  color: #ffd43b;
+}
+
+.section-text {
+  font-size: 1.05rem;
+  color: #dde3ea;
+  margin-bottom: 16px;
+}
+
+.cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 30px;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 26px;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 2px solid transparent;
+}
+
+.cta-button.primary {
+  background: #ffd43b;
+  color: #071724;
+  box-shadow: 0 12px 24px rgba(255, 212, 59, 0.3);
+}
+
+.cta-button.secondary {
+  background: transparent;
+  border-color: #68c4cf;
+  color: #68c4cf;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 26px rgba(0, 0, 0, 0.35);
+}
+
+.values-grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.values-grid li {
+  background-color: rgba(104, 196, 207, 0.14);
+  border: 1px solid rgba(104, 196, 207, 0.35);
+  padding: 14px 18px;
+  border-radius: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bullet-list {
+  margin: 0 0 16px 18px;
+  color: #dde3ea;
+  line-height: 1.7;
+}
+
+.bullet-list li {
+  margin-bottom: 8px;
+}
+
+.highlight-card {
+  margin-top: 24px;
+  padding: 24px;
+  border-radius: 18px;
+  background: rgba(15, 48, 70, 0.85);
+  border: 1px solid rgba(104, 196, 207, 0.25);
+}
+
+.highlight-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  color: #68c4cf;
+}
+
+.subtle-text {
+  font-size: 0.95rem;
+  color: rgba(221, 227, 234, 0.7);
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    padding: 120px 24px 100px 24px;
+    gap: 60px;
   }
+
+  .home-section {
+    padding: 32px 24px;
+  }
+
+  .cta-buttons {
+    width: 100%;
+  }
+
+  .cta-button {
+    flex: 1 1 180px;
+    text-align: center;
+  }
+}
   .intro{
     max-width: 40%;
     padding: 0% 2% 0% 0%;
