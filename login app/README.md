@@ -35,13 +35,16 @@ It combines a **React + Vite** frontend with an **Express.js** backend and a sim
 ### 1. 📦 Install dependencies
 
 ```bash
-# From project root
+# From repository root
 cd "login app"
-cd backend
-npm install      # Install Express, sqlite3, dotenv, bcrypt, jsonwebtoken...
 
-cd ../
-npm install      # Install React dependencies via Vite
+# Backend dependencies (Express server)
+cd backend              # /login app/backend
+npm install             # Installs Express, sqlite3, dotenv, bcrypt, jsonwebtoken...
+
+# Frontend dependencies (React + Vite)
+cd ..                   # Back to /login app
+npm install             # Installs Vite, React and related packages
 ```
 
 ---
@@ -60,14 +63,15 @@ JWT_SECRET=your_super_secret_key
 
 **Start the backend server (Express + SQLite3):**
 ```bash
-cd backend
-node server.js
+cd "login app/backend"   # Make sure you are inside the backend folder
+node server.js           # Starts the Express + SQLite3 API
 ```
 
 **In a new terminal, start the frontend (React):**
 ```bash
-npm install vite
-npm run dev
+cd "login app"           # Switch to the frontend root
+npm install vite         # (Only needed once, if not already installed)
+npm run dev              # Starts the Vite development server
 ```
 
 As shown in the second terminal, open your browser at:  
