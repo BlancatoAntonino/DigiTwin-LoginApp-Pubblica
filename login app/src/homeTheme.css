@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
 
 .home-body {
-  background-color: #ffffff;
+  background-color: #7C9DC9;
   background-image: radial-gradient(circle at top right, rgba(0, 161, 154, 0.06), transparent 55%),
     radial-gradient(circle at bottom left, rgba(124, 157, 201, 0.08), transparent 55%);
   color: #1e244d;
@@ -10,7 +10,7 @@
 .home-theme {
   font-family: "Audiowide", "Segoe UI", sans-serif;
   color: #1e244d;
-  background-color: #ffffff;
+  background-color: #7C9DC9;
   background-image: radial-gradient(circle at top right, rgba(0, 161, 154, 0.06), transparent 55%),
     radial-gradient(circle at bottom left, rgba(124, 157, 201, 0.08), transparent 55%);
 }

@@ -9,14 +9,14 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-section">
           <h4>Contacts</h4>
-          <p>Email: xxx@xxx.xx</p>
-          <p>Address: Via xx xx, Torino TO</p>
+          <p>Email: @digitwinmonitoring</p>
+          <p>Address: Corso Duca degli Abruzzi 24, Torino TO, Italia</p>
         </div>
 
         <div className="footer-section">
           <h4>Social</h4>
           <p>
-            <a href="#">Instagram</a> | <a href="#">LinkedIn</a> | <a href="#">YouTube</a>
+            <a href="#">Instagram: @digitwinmonitoring</a> | <a href="#">LinkedIn: DigiTwin Monitoring - PoliTo</a> 
           </p>
         </div>
       </div>
