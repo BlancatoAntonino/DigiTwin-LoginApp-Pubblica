@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="footer-section">
           <h4>Social</h4>
           <p>
-            <a href="#">Instagram: @digitwinmonitoring</a> | <a href="#">LinkedIn: DigiTwin Monitoring - PoliTo</a> 
+            Instagram: <a href="#">@digitwinmonitoring</a> | LinkedIn: <a href="#">DigiTwin Monitoring - PoliTo</a>
           </p>
         </div>
       </div>

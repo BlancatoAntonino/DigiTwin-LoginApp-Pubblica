@@ -9,13 +9,21 @@ html {
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Gotham Book", "Gotham", "Segoe UI", sans-serif;
   background-color: #071724;
   color: white;
   line-height: 1.6;
   padding-bottom: 150px;
   margin: 0;
   padding: 0;
+}
+
+h1,
+h2,
+h3,
+.hero-title,
+.section-title {
+  font-family: "Audiowide", "Segoe UI", sans-serif;
 }
   
 
