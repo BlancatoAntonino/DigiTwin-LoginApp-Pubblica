@@ -26,12 +26,14 @@
 .home-header .logo span {
   color: #00a19a;
   letter-spacing: 1.4px;
+  font-size: 1.6rem;
 }
 
 .home-header nav a {
   color: #fdfcff;
   font-family: "Gotham Book", "Gotham", "Segoe UI", sans-serif;
   transition: color 0.2s ease, transform 0.2s ease;
+  font-size: 1.15rem;
 }
 
 .home-header nav a:hover,
