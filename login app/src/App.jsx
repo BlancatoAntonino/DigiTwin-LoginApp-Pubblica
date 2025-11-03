@@ -10,9 +10,10 @@ import AboutPage, { ChiSiamoSection } from "./components/About";
 import EventsPage, { EventsSection } from "./components/Events";
 import GalleryPage, { GallerySection } from "./components/Gallery";
 import "./style1.css";
+import "./homeTheme.css";
 
 const Home = () => (
-  <main className="home-container">
+  <main className="home-container home-theme">
     <section className="home-section hero-section" id="hero">
       <h1 className="hero-title">
         DigiTwin Monitoring
