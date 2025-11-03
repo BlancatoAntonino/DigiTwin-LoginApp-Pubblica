@@ -12,10 +12,11 @@ body {
   font-family: "Gotham Book", "Gotham", "Segoe UI", sans-serif;
   background-color: #071724;
   color: white;
-  line-height: 1.6;
+  line-height: 1.7;
   padding-bottom: 150px;
   margin: 0;
   padding: 0;
+  font-size: 1.1rem;
 }
 
 h1,
@@ -40,8 +41,7 @@ h3,
     border-bottom: 2px solid #ffd53b84;
   }
   .logo {
-    
-    font-size: 1.3rem;
+    font-size: 1.55rem;
     font-weight: bold;
     letter-spacing: 1px;
   }
@@ -60,8 +60,7 @@ h3,
     margin-left: 25px;
     color: white;
     text-decoration: none;
-    
-    font-size: 0.95rem;
+    font-size: 1.15rem;
   }
   
 main {
@@ -106,7 +105,7 @@ main {
 }
 
 .hero-title {
-  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-size: clamp(2.8rem, 5.5vw, 4.4rem);
   font-weight: 700;
   letter-spacing: 1px;
   margin-bottom: 20px;
@@ -115,26 +114,26 @@ main {
 
 .hero-highlight {
   display: block;
-  font-size: clamp(1.5rem, 3.2vw, 2.4rem);
+  font-size: clamp(1.7rem, 3.6vw, 2.8rem);
   color: #68c4cf;
   margin-top: 10px;
 }
 
 .hero-subtitle {
-  font-size: clamp(1.1rem, 2.2vw, 1.4rem);
+  font-size: clamp(1.3rem, 2.6vw, 1.8rem);
   color: #ffd43b;
   font-weight: 500;
   margin-bottom: 20px;
 }
 
 .section-title {
-  font-size: clamp(1.9rem, 3vw, 2.4rem);
+  font-size: clamp(2.1rem, 3.4vw, 2.8rem);
   margin-bottom: 18px;
   color: #ffd43b;
 }
 
 .section-text {
-  font-size: 1.05rem;
+  font-size: 1.25rem;
   color: #dde3ea;
   margin-bottom: 16px;
 }
@@ -156,6 +155,7 @@ main {
   text-decoration: none;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   border: 2px solid transparent;
+  font-size: 1.1rem;
 }
 
 .cta-button.primary {
@@ -192,12 +192,14 @@ main {
   display: flex;
   align-items: center;
   gap: 10px;
+  font-size: 1.2rem;
 }
 
 .bullet-list {
   margin: 0 0 16px 18px;
   color: #dde3ea;
-  line-height: 1.7;
+  line-height: 1.8;
+  font-size: 1.2rem;
 }
 
 .bullet-list li {
@@ -213,13 +215,17 @@ main {
 }
 
 .highlight-card h3 {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   margin-bottom: 12px;
   color: #68c4cf;
 }
 
+.highlight-card p {
+  font-size: 1.25rem;
+}
+
 .subtle-text {
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   color: rgba(221, 227, 234, 0.7);
   font-style: italic;
 }
@@ -248,12 +254,12 @@ main {
     padding: 0% 2% 0% 0%;
   }
   .intro h1 {
-    font-size: 2.6rem;
+    font-size: 2.9rem;
     margin-bottom: 10px;
   }
-  
+
   .intro p {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     color: #DDE3EA;
   }
   
@@ -283,7 +289,7 @@ main {
   }
   
   .subtext {
-    font-size: 0.75rem;
+    font-size: 0.95rem;
     font-weight: normal;
     margin-top: 10px;
   }
@@ -343,7 +349,7 @@ main {
     margin-top: 60px;
     text-align: center;
     padding: 20px;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     color: #DDE3EA;
   }
   .main-box {
@@ -446,7 +452,7 @@ main {
   background-color: #0b1d2f;
   padding: 40px 20px 20px 20px;
   color: #dde3ea;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   border-top: 2px solid #ffd43b4d;
 }
 
@@ -462,15 +468,20 @@ main {
   margin-bottom: 20px;
 }
 
+.footer-section p {
+  font-size: 1.1rem;
+}
+
 .footer-section h4 {
   margin-bottom: 10px;
-  font-size: 1rem;
+  font-size: 1.25rem;
   color: #ffffff;
 }
 
 .footer-section a {
   color: #ffd43b;
   text-decoration: none;
+  font-size: 1.1rem;
 }
 
 .footer-section a:hover {
@@ -480,7 +491,7 @@ main {
 .footer-bottom {
   text-align: center;
   color: #aaaaaa;
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin-top: 20px;
 }
 
@@ -493,7 +504,7 @@ main {
 }
 
 .contact-form label {
-  font-size: 0.95rem;
+  font-size: 1.15rem;
   font-weight: 500;
 }
 
@@ -505,7 +516,7 @@ main {
   border: none;
   background-color: #dde3ea;
   color: #071724;
-  font-size: 1rem;
+  font-size: 1.15rem;
   resize: vertical;
 }
 
@@ -518,7 +529,7 @@ main {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 0.9rem;
+  font-size: 1.05rem;
   flex-wrap: nowrap;
   white-space: nowrap;
 }
@@ -536,6 +547,7 @@ main {
   font-weight: bold;
   cursor: pointer;
   width: 100%;
+  font-size: 1.15rem;
 }
 
 .contact-form button:hover {
@@ -568,4 +580,8 @@ main {
   flex-direction: column;
   justify-content: flex-start;
   padding: 10px;
+}
+
+.contact-right-column h4 {
+  font-size: 1.4rem;
 }
