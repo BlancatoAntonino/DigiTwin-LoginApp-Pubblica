@@ -1,6 +1,7 @@
 // App.jsx - gestione routing per Login, ContactUs, ecc.
 
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 import ContactUs from "./components/ContactUs";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -10,9 +11,10 @@ import AboutPage, { ChiSiamoSection } from "./components/About";
 import EventsPage, { EventsSection } from "./components/Events";
 import GalleryPage, { GallerySection } from "./components/Gallery";
 import "./style1.css";
+import "./homeTheme.css";
 
 const Home = () => (
-  <main className="home-container">
+  <main className="home-container home-theme">
     <section className="home-section hero-section" id="hero">
       <h1 className="hero-title">
         DigiTwin Monitoring
@@ -88,9 +90,24 @@ const Home = () => (
   </main>
 );
 
-const App = () => {
+const AppContent = () => {
+  const location = useLocation();
+  const isHome = location.pathname === "/";
+
+  useEffect(() => {
+    if (isHome) {
+      document.body.classList.add("home-body");
+    } else {
+      document.body.classList.remove("home-body");
+    }
+
+    return () => {
+      document.body.classList.remove("home-body");
+    };
+  }, [isHome]);
+
   return (
-    <Router>
+    <>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -102,8 +119,14 @@ const App = () => {
         <Route path="/register" element={<RegisterForm />} />
       </Routes>
       <Footer />
-    </Router>
+    </>
   );
 };
+
+const App = () => (
+  <Router>
+    <AppContent />
+  </Router>
+);
 
 export default App;
