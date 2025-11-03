@@ -35,11 +35,9 @@ It combines a **React + Vite** frontend with an **Express.js** backend and a sim
 ### 1. 📦 Install dependencies
 
 ```bash
-# From repository root
-cd "login app"
 
 # Backend dependencies (Express server)
-cd backend              # /login app/backend
+cd "login app/backend"  # Make sure you are inside the backend folder          
 npm install             # Installs Express, sqlite3, dotenv, bcrypt, jsonwebtoken...
 
 # Frontend dependencies (React + Vite)
