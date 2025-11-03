@@ -1,6 +1,11 @@
+import { useLocation } from "react-router-dom";
+
 const Footer = () => {
+  const location = useLocation();
+  const isHome = location.pathname === "/";
+
   return (
-    <footer className="footer">
+    <footer className={`footer${isHome ? " home-footer" : ""}`}>
       <div className="footer-content">
         <div className="footer-section">
           <h4>Contacts</h4>

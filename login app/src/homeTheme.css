@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
+.home-theme {
+  font-family: "Audiowide", "Segoe UI", sans-serif;
+  color: #1e244d;
+  background-color: #ffffff;
+  background-image: radial-gradient(circle at top right, rgba(0, 161, 154, 0.06), transparent 55%),
+    radial-gradient(circle at bottom left, rgba(124, 157, 201, 0.08), transparent 55%);
+}
+
+.home-header {
+  background: linear-gradient(135deg, #2d2e83, #662483);
+  color: #f4f6ff;
+  font-family: "Audiowide", "Segoe UI", sans-serif;
+  border-bottom: 3px solid rgba(0, 161, 154, 0.4);
+  box-shadow: 0 12px 28px rgba(19, 22, 78, 0.35);
+}
+
+.home-header .logo span {
+  color: #00a19a;
+  letter-spacing: 1.4px;
+}
+
+.home-header nav a {
+  color: #fdfcff;
+  font-family: "Audiowide", "Segoe UI", sans-serif;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.home-header nav a:hover,
+.home-header nav a:focus {
+  color: #00a19a;
+  transform: translateY(-2px);
+}
+
+.home-theme .home-section {
+  background: linear-gradient(135deg, rgba(45, 46, 131, 0.94), rgba(102, 36, 131, 0.9));
+  border: 1px solid rgba(124, 157, 201, 0.45);
+  box-shadow: 0 18px 40px rgba(14, 16, 70, 0.45);
+}
+
+.home-theme .hero-section {
+  background: linear-gradient(135deg, rgba(45, 46, 131, 0.95), rgba(102, 36, 131, 0.85));
+  position: relative;
+  overflow: hidden;
+}
+
+.home-theme .hero-section::before,
+.home-theme .hero-section::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  z-index: 0;
+}
+
+.home-theme .hero-section::before {
+  width: 320px;
+  height: 320px;
+  top: -120px;
+  right: -80px;
+  background: rgba(0, 161, 154, 0.35);
+}
+
+.home-theme .hero-section::after {
+  width: 260px;
+  height: 260px;
+  bottom: -100px;
+  left: -60px;
+  background: rgba(124, 157, 201, 0.3);
+}
+
+.home-theme .hero-section > * {
+  position: relative;
+  z-index: 1;
+}
+
+.home-theme .hero-title {
+  color: #fdfcff;
+  text-shadow: 0 6px 18px rgba(7, 8, 41, 0.65);
+}
+
+.home-theme .hero-highlight {
+  color: #00a19a;
+}
+
+.home-theme .hero-subtitle {
+  color: #7c9dc9;
+}
+
+.home-theme .section-title {
+  color: #00a19a;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+}
+
+.home-theme .section-text,
+.home-theme .bullet-list {
+  color: rgba(238, 241, 255, 0.9);
+}
+
+.home-theme .values-grid li {
+  background: rgba(0, 161, 154, 0.18);
+  border-color: rgba(0, 161, 154, 0.3);
+  color: #f4f6ff;
+}
+
+.home-theme .highlight-card {
+  background: rgba(45, 46, 131, 0.7);
+  border-color: rgba(124, 157, 201, 0.4);
+  color: rgba(238, 241, 255, 0.9);
+}
+
+.home-theme .highlight-card h3 {
+  color: #7c9dc9;
+}
+
+.home-theme .cta-button {
+  border-width: 2px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.home-theme .cta-button.primary {
+  background: #00a19a;
+  color: #0b122f;
+  border-color: #00a19a;
+  box-shadow: 0 12px 30px rgba(0, 161, 154, 0.35);
+}
+
+.home-theme .cta-button.secondary {
+  background: transparent;
+  color: #7c9dc9;
+  border-color: rgba(124, 157, 201, 0.85);
+  box-shadow: 0 12px 26px rgba(22, 26, 84, 0.45);
+}
+
+.home-theme .cta-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 36px rgba(7, 8, 41, 0.45);
+}
+
+.home-theme .bullet-list li::marker {
+  color: #00a19a;
+}
+
+.home-theme .values-grid {
+  gap: 16px;
+}
+
+.home-footer {
+  background: linear-gradient(160deg, rgba(45, 46, 131, 0.95), rgba(102, 36, 131, 0.9));
+  color: #f3f5ff;
+  border-top: 3px solid rgba(0, 161, 154, 0.35);
+  font-family: "Audiowide", "Segoe UI", sans-serif;
+  box-shadow: 0 -12px 26px rgba(19, 22, 78, 0.3);
+}
+
+.home-footer .footer-section h4 {
+  color: #00a19a;
+}
+
+.home-footer .footer-section a {
+  color: #7c9dc9;
+  font-family: "Audiowide", "Segoe UI", sans-serif;
+}
+
+.home-footer .footer-section a:hover,
+.home-footer .footer-section a:focus {
+  color: #00a19a;
+}
+
+.home-footer hr {
+  border-color: rgba(243, 245, 255, 0.35);
+}
+
+.home-footer .footer-bottom {
+  color: rgba(243, 245, 255, 0.8);
+  letter-spacing: 0.8px;
+}
+
+@media (max-width: 768px) {
+  .home-theme {
+    background-color: #ffffff;
+    background-image: radial-gradient(circle at top right, rgba(0, 161, 154, 0.08), transparent 55%),
+      radial-gradient(circle at bottom left, rgba(124, 157, 201, 0.12), transparent 55%);
+  }
+
+  .home-theme .hero-section::before,
+  .home-theme .hero-section::after {
+    display: none;
+  }
+
+  .home-theme .home-section {
+    background: rgba(45, 46, 131, 0.92);
+  }
+}
