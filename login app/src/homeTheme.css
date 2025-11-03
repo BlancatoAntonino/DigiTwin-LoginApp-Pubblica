@@ -8,7 +8,7 @@
 }
 
 .home-theme {
-  font-family: "Audiowide", "Segoe UI", sans-serif;
+  font-family: "Gotham Book", "Gotham", "Segoe UI", sans-serif;
   color: #1e244d;
   background-color: #7C9DC9;
   background-image: radial-gradient(circle at top right, rgba(0, 161, 154, 0.06), transparent 55%),
@@ -18,7 +18,7 @@
 .home-header {
   background: linear-gradient(135deg, #2d2e83, #662483);
   color: #f4f6ff;
-  font-family: "Audiowide", "Segoe UI", sans-serif;
+  font-family: "Gotham Book", "Gotham", "Segoe UI", sans-serif;
   border-bottom: 3px solid rgba(0, 161, 154, 0.4);
   box-shadow: 0 12px 28px rgba(19, 22, 78, 0.35);
 }
@@ -30,7 +30,7 @@
 
 .home-header nav a {
   color: #fdfcff;
-  font-family: "Audiowide", "Segoe UI", sans-serif;
+  font-family: "Gotham Book", "Gotham", "Segoe UI", sans-serif;
   transition: color 0.2s ease, transform 0.2s ease;
 }
 
@@ -80,6 +80,13 @@
 .home-theme .hero-section > * {
   position: relative;
   z-index: 1;
+}
+
+.home-theme .hero-title,
+.home-theme .hero-highlight,
+.home-theme .section-title,
+.home-theme .highlight-card h3 {
+  font-family: "Audiowide", "Segoe UI", sans-serif;
 }
 
 .home-theme .hero-title {
@@ -159,7 +166,7 @@
   background: linear-gradient(160deg, rgba(45, 46, 131, 0.95), rgba(102, 36, 131, 0.9));
   color: #f3f5ff;
   border-top: 3px solid rgba(0, 161, 154, 0.35);
-  font-family: "Audiowide", "Segoe UI", sans-serif;
+  font-family: "Gotham Book", "Gotham", "Segoe UI", sans-serif;
   box-shadow: 0 -12px 26px rgba(19, 22, 78, 0.3);
 }
 
@@ -169,7 +176,7 @@
 
 .home-footer .footer-section a {
   color: #7c9dc9;
-  font-family: "Audiowide", "Segoe UI", sans-serif;
+  font-family: "Gotham Book", "Gotham", "Segoe UI", sans-serif;
 }
 
 .home-footer .footer-section a:hover,
