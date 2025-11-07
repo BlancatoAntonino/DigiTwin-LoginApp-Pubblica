@@ -1,12 +1,8 @@
-import { useLocation } from "react-router-dom";
 import "./Footer.css";
 
 const Footer = () => {
-  const location = useLocation();
-  const isHome = location.pathname === "/";
-
   return (
-    <footer className={`footer${isHome ? " home-footer" : ""}`}>
+    <footer className="home-footer">
       <div className="footer-content">
         <div className="footer-section">
           <h4>Contacts</h4>

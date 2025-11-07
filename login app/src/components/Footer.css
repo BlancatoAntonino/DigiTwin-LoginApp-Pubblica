@@ -1,78 +1,47 @@
-footer {
-  margin-top: 60px;
-  text-align: center;
-  padding: 20px;
-  font-size: 1.1rem;
-  color: #dde3ea;
-}
-
-.footer {
+.home-footer {
   margin-top: 80px;
-  background-color: #0b1d2f;
+  text-align: center;
+  background: linear-gradient(160deg, rgba(45, 46, 131, 0.95), rgba(102, 36, 131, 0.9));
   padding: 40px 20px 20px 20px;
-  color: #dde3ea;
+  color: #f3f5ff;
   font-size: 1.1rem;
-  border-top: 2px solid #ffd43b4d;
+  border-top: 3px solid rgba(0, 161, 154, 0.35);
+  font-family: "Gotham Book", "Gotham", "Segoe UI", sans-serif;
+  box-shadow: 0 -12px 26px rgba(19, 22, 78, 0.3);
 }
 
-.footer-content {
+.home-footer .footer-content {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   margin-bottom: 20px;
 }
 
-.footer-section {
+.home-footer .footer-section {
   min-width: 200px;
   margin-bottom: 20px;
 }
 
-.footer-section p {
+.home-footer .footer-section p {
   font-size: 1.1rem;
-}
-
-.footer-section h4 {
-  margin-bottom: 10px;
-  font-size: 1.25rem;
-  color: #ffffff;
-}
-
-.footer-section a {
-  color: #ffd43b;
-  text-decoration: none;
-  font-size: 1.1rem;
-}
-
-.footer-section a:hover {
-  text-decoration: underline;
-}
-
-.footer-bottom {
-  text-align: center;
-  color: #aaaaaa;
-  font-size: 1rem;
-  margin-top: 20px;
-}
-
-.home-footer {
-  background: linear-gradient(160deg, rgba(45, 46, 131, 0.95), rgba(102, 36, 131, 0.9));
-  color: #f3f5ff;
-  border-top: 3px solid rgba(0, 161, 154, 0.35);
-  font-family: "Gotham Book", "Gotham", "Segoe UI", sans-serif;
-  box-shadow: 0 -12px 26px rgba(19, 22, 78, 0.3);
 }
 
 .home-footer .footer-section h4 {
+  margin-bottom: 10px;
+  font-size: 1.25rem;
   color: #00a19a;
 }
 
 .home-footer .footer-section a {
   color: #7c9dc9;
+  text-decoration: none;
+  font-size: 1.1rem;
   font-family: "Gotham Book", "Gotham", "Segoe UI", sans-serif;
 }
 
 .home-footer .footer-section a:hover,
 .home-footer .footer-section a:focus {
+  text-decoration: underline;
   color: #00a19a;
 }
 
@@ -81,6 +50,9 @@ footer {
 }
 
 .home-footer .footer-bottom {
+  text-align: center;
   color: rgba(243, 245, 255, 0.8);
+  font-size: 1rem;
+  margin-top: 20px;
   letter-spacing: 0.8px;
 }

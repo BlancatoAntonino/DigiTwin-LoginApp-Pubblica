@@ -1,12 +1,9 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Header.css";
 
 const Header = () => {
-  const location = useLocation();
-  const isHome = location.pathname === "/";
-
   return (
-    <header className={isHome ? "home-header" : ""}>
+    <header className="home-header">
       <div className="logo">
         {/* Se hai un'immagine logo, puoi sostituire <span> con <img src="logo.png" alt="logo" /> */}
         <span>DigiTwin Monitoring</span>
