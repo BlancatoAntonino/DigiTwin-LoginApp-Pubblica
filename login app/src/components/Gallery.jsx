@@ -6,9 +6,7 @@ export const GallerySection = ({ sectionId = "galleria" }) => (
       sperimentazione in laboratorio ai sopralluoghi in campo, la gallery mostra il nostro impegno nel trasformare la
       teoria in pratica.
     </p>
-    <p className="section-text subtle-text">
-      (Puoi inserire immagini reali dei progetti o del team, con brevi descrizioni.)
-    </p>
+    
   </section>
 );
 
