@@ -16,9 +16,23 @@ const Footer = () => {
         <div className="footer-section">
           <h4>Social</h4>
           <p>
-            Instagram: <a href="#">@digitwinmonitoring</a> 
+            Instagram:{" "}
+            <a
+              href="https://www.instagram.com/digitwin.monitoring/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              @digitwinmonitoring
+            </a>
             <br />
-            LinkedIn: <a href="#">DigiTwin Monitoring - PoliTo</a>
+            LinkedIn:{" "}
+            <a
+              href="https://www.linkedin.com/company/digitwinmonitoring/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              @digitwinmonitoring
+            </a>
           </p>
         </div>
       </div>
