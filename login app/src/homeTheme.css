@@ -15,33 +15,6 @@
     radial-gradient(circle at bottom left, rgba(124, 157, 201, 0.08), transparent 55%);
 }
 
-.home-header {
-  background: linear-gradient(135deg, #2d2e83, #662483);
-  color: #f4f6ff;
-  font-family: "Gotham Book", "Gotham", "Segoe UI", sans-serif;
-  border-bottom: 3px solid rgba(0, 161, 154, 0.4);
-  box-shadow: 0 12px 28px rgba(19, 22, 78, 0.35);
-}
-
-.home-header .logo span {
-  color: #00a19a;
-  letter-spacing: 1.4px;
-  font-size: 1.6rem;
-}
-
-.home-header nav a {
-  color: #fdfcff;
-  font-family: "Gotham Book", "Gotham", "Segoe UI", sans-serif;
-  transition: color 0.2s ease, transform 0.2s ease;
-  font-size: 1.15rem;
-}
-
-.home-header nav a:hover,
-.home-header nav a:focus {
-  color: #00a19a;
-  transform: translateY(-2px);
-}
-
 .home-theme .home-section {
   background: linear-gradient(135deg, rgba(45, 46, 131, 0.94), rgba(102, 36, 131, 0.9));
   border: 1px solid rgba(124, 157, 201, 0.45);
@@ -162,37 +135,6 @@
 
 .home-theme .values-grid {
   gap: 16px;
-}
-
-.home-footer {
-  background: linear-gradient(160deg, rgba(45, 46, 131, 0.95), rgba(102, 36, 131, 0.9));
-  color: #f3f5ff;
-  border-top: 3px solid rgba(0, 161, 154, 0.35);
-  font-family: "Gotham Book", "Gotham", "Segoe UI", sans-serif;
-  box-shadow: 0 -12px 26px rgba(19, 22, 78, 0.3);
-}
-
-.home-footer .footer-section h4 {
-  color: #00a19a;
-}
-
-.home-footer .footer-section a {
-  color: #7c9dc9;
-  font-family: "Gotham Book", "Gotham", "Segoe UI", sans-serif;
-}
-
-.home-footer .footer-section a:hover,
-.home-footer .footer-section a:focus {
-  color: #00a19a;
-}
-
-.home-footer hr {
-  border-color: rgba(243, 245, 255, 0.35);
-}
-
-.home-footer .footer-bottom {
-  color: rgba(243, 245, 255, 0.8);
-  letter-spacing: 0.8px;
 }
 
 @media (max-width: 768px) {
